@@ -1,0 +1,17 @@
+import pygal
+pie_chart = pygal.Pie(inner_radius=.4)
+pie_chart.title = '(ร้อยละ) ข้าราชการในฝ่ายพลเรือนปีงบประมาณ 2561 ทั้งหมด 1.33 ล้านคน'
+pie_chart.add('ครู', 32.01)
+pie_chart.add('พลเรือนสามัญ', 29.45)
+pie_chart.add('ตำรวจ', 16.39)
+pie_chart.add('ส่วนตำบล', 5.86)
+pie_chart.add('เทศบาล', 4.91)
+pie_chart.add('ครูท้องถิ่น', 4.32)
+pie_chart.add('กรุงเทพมหานคร', 2.67)
+pie_chart.add('อิสระ', 1.60)
+pie_chart.add('อุดมศึกษา', 1.16)
+pie_chart.add('ส่วนจังหวัด', 1.16)
+pie_chart.add('ตุลาการ', 0.36)
+pie_chart.add('อัยการ', 0.29)
+pie_chart.add('รัฐสภา', 0.23)
+pie_chart.render_to_file('pie_chart.svg')  
